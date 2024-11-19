@@ -144,7 +144,7 @@ class Board:
     def is_up_diagonal_win(self, checker):
         """ Checks for a up diagonal win for the specified checker.
         """
-        for row in range(self.height):
+        for row in range(3, self.height):
             for col in range(self.width - 3):
                 if self.slots[row][col] == checker and \
                    self.slots[row - 1][col + 1] == checker and \
