@@ -47,7 +47,7 @@ class AIPlayer(Player):
                 b.add_checker(self.checker, col)
                 AIOpponent = AIPlayer(self.opponent_checker(), self.tiebreak, self.lookahead - 1)
                 opp_scores = AIOpponent.scores_for(b)
-                col_opp_score = opp_scores[AIOpponent.max_score_column(opp_scores)]
+                col_opp_score = max(opp_scores)
                 if col_opp_score == 0:
                     scores[col] = 100
                 elif col_opp_score == 100:
