@@ -61,11 +61,11 @@ def display_menu():
 def AI():
     print("-- AI Configuration --")
     print("Difficulty: ")
-    difficulty = int(input("Enter a number between 1 and 5: "))
+    difficulty = int(input("Enter a number between 1 and 6: "))
     while True:
-        if difficulty >=1 and difficulty <= 5:
+        if difficulty >=1 and difficulty <= 6:
             break
-        difficulty = int(input("Enter a number between 1 and 5: "))
+        difficulty = int(input("Enter a number between 1 and 6: "))
     
     print("TieBreaker MODE: ")
     TieBreaker = input("LEFT, RIGHT, or RANDOM: ").upper()

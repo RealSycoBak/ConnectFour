@@ -30,7 +30,7 @@ class AIPlayer(Player):
             return random.choice(indices)
         
     def scores_for(self, b):
-        """ returns a list of scores one for each col in board b 
+        """ returns a list of scores - one for each col in board b 
         """
         scores = [50] * b.width
         for col in range(b.width):
